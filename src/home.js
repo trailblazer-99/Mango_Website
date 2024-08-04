@@ -149,7 +149,7 @@ export const ImageUpload = () => {
       formData.append("file", selectedFile);
       let res = await axios({
         method: "post",
-        url: 'mangodiseasedetection.azurewebsites.net',
+        url: 'https://mangodiseasedetection.azurewebsites.net/',
         data: formData,
       });
       if (res.status === 200) {
